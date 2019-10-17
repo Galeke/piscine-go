@@ -1,10 +1,14 @@
 package piscine
 
 func StrRev(s string) string {
-	var c string
-	for i := len(s) - 1; i >= 0; i-- {
-		c += string(s[i])
+	c := []rune(s)
+	d := 0
+	for i := range c {
+		d = i
+	}
+	for i, j := 0, d; i < j; i, j = i+1, j-1 {
+		c[i], c[j] = c[j], c[i]
 
 	}
-	return c
+	return string(c)
 }
