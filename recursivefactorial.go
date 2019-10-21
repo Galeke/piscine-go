@@ -1,4 +1,4 @@
-package psicine
+package piscine
 
 func RecursiveFactorial(nb int) int {
 	if nb == 1 {
