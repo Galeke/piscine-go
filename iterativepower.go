@@ -10,4 +10,4 @@ func IterativePower(nb int, power int) int {
 		result = 0
 	}
 	return result
-} 
+}
