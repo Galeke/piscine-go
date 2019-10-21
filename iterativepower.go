@@ -8,7 +8,7 @@ func IterativePower(nb int, power int) int {
 				result = result * nb
 			}
 		}
-	} else {
+	} else if power < 0 {
 		result = 0
 	}
 	return result
