@@ -1,10 +1,22 @@
 package piscine
 
-func FindNextPrime(nb int) int {
-	for i := 2; i < nb; i++ {
-		if nb%i == 0 {
-			return FindNextPrime(nb + 1)
+func Prime(a int) bool {
+	if a <= 1 {
+		return false
+	}
+	for i := 2; i*i <= a; i++ {
+		if a%i == 0 {
+			return false
 		}
 	}
-	return nb
+	return true
+}
+
+func FindNextPrime(nb int) int {
+	for {
+		if Prime(nb) {
+			return nb
+		}
+		nb++
+	}
 }
