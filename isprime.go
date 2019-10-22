@@ -1,16 +1,11 @@
 package piscine
 
-func IsPrime(nb int) bool {
-	if nb == 0 {
-		return true
+func IsPrime(x int) bool {
+	if x <= 1 {
+		return false
 	}
-	for i := 2; i < nb; i++ {
-		if nb%i == 0 {
-			return false
-		}
-	}
-	for i := -2; i < -nb; i-- {
-		if nb%i == 0 {
+	for i := 2; i*i <= x; i++ {
+		if x%i == 0 {
 			return false
 		}
 	}
