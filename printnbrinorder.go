@@ -7,12 +7,12 @@ func PrintNbrInOrder(n int) {
 	if n == 0 {
 		t = append(t, 0)
 	}
-	for i := 0; n > 0; i++ {
+	for i := 0; n > 0; i-- {
 		t = append(t, n%10)
 		n /= 10
 	}
 
 	for i := range t {
-		z01.PrintRune(rune('0' + t[i]))
+		z01.PrintRune(rune(t[i]) + '0')
 	}
 }
