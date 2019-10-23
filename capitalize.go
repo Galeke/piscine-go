@@ -1,10 +1,10 @@
-package piscine 
+package piscine
 
 func AlphNum(t rune) bool {
 	if t >= 'A' && t <= 'Z' || t >= 'a' && t <= 'z' || t >= '0' && t <= '9' {
 		return true
 	}
-	return false 
+	return false
 }
 
 func Capitalize(s string) string {
@@ -15,7 +15,7 @@ func Capitalize(s string) string {
 				if letter >= 'a' && letter <= 'z' {
 					Arr1[index] = letter - 32
 				}
-			}else{
+			} else {
 				if letter >= 'A' && letter <= 'Z' {
 					Arr1[index] = letter + 32
 				}
