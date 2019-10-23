@@ -5,7 +5,7 @@ func Index(s string, toFind string) int {
 	toFindtoRune := []rune(toFind)
 	length := 0
 	for range toFindtoRune {
-			length++
+		length++
 	}
 	for index, str := range sToRune {
 		if length > 0 && str == toFindtoRune[0] {
