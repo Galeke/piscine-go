@@ -1,4 +1,4 @@
-package piscine 
+package piscine
 
 func Index(s string, toFind string) int {
 	sToRune := []rune(s)
