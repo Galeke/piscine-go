@@ -1,14 +1,13 @@
-package piscine 
+package piscine
 
 func LastRune(s string) rune {
-		Arr1:= []rune(s)
-		count := 0
-		for _, i := range Arr1 {
-			if i == i {
-			}
-			count++
-		
+	Arr1 := []rune(s)
+	count := 0
+	for _, i := range Arr1 {
+		if i == i {
 		}
-		return Arr1[count-1]
+		count++
+
 	}
-	
+	return Arr1[count-1]
+}
