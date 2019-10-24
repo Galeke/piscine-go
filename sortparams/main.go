@@ -7,10 +7,10 @@ import (
 )
 
 func main() {
-	argument := os.Args 
-	n := 0 
+	argument := os.Args
+	n := 0
 	for index := range argument {
-			n = index
+		n = index
 	}
 	argument = argument[1 : n+1]
 
