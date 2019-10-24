@@ -1,4 +1,4 @@
-package piscine 
+package piscine
 
 func ConcatParams(args []string) string {
 	result := ""
