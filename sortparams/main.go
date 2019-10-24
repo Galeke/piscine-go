@@ -10,9 +10,9 @@ func main() {
 	argument := os.Args 
 	n := 0 
 	for index := range argument {
-		n = index
+			n = index
 	}
-	argument = argument [1 : n+1]
+	argument = argument[1 : n+1]
 
 	for i := 0; i < n; i++ {
 		for j := i + 1; j < n; j++ {
